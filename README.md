@@ -35,6 +35,14 @@ All layers must align for conditional access to function correctly.
 
 ---
 
+User → AWS Portal → Okta (Global Policy) → Okta Dashboard Policy → AWS App Policy
+             ↓
+        Trusted / Untrusted
+             ↓
+      Password-only / MFA
+
+---
+
 ## Configuration Steps
 
 ### 1️⃣ Network Zone Creation
