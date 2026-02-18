@@ -35,11 +35,15 @@ All layers must align for conditional access to function correctly.
 
 ---
 
-User → AWS Portal → Okta (Global Policy) → Okta Dashboard Policy → AWS App Policy
-             ↓
-        Trusted / Untrusted
-             ↓
-      Password-only / MFA
+### 🔄 Authentication Evaluation Flow
+
+User  
+→ AWS Access Portal  
+→ Okta Global Session Policy  
+→ Okta Dashboard Policy  
+→ AWS IAM Identity Center App Policy  
+→ Network Evaluation (Trusted / Untrusted)  
+→ Authentication Requirement (Password-only / MFA)
 
 ---
 
